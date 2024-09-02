@@ -1,9 +1,9 @@
 if (process.env.NODE_ENV !== "production") {
     require('dotenv').config();
 }
-const express = require('express');//This line imports the express module, which is a popular Node.js framework used for building web applications. The express function creates an instance of an Express application.
+const express = require('express');//This line imports the express module, a popular Node.js framework for building web applications. The express function creates an instance of an Express application.
 const path = require('path');//The path module is a built-in Node.js module that provides utilities for working with file and directory paths. It is used here to manage and resolve file paths in a cross-platform manner.
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');//This imports the mongoose library, which interacts with a MongoDB database from Node.js.
 const ejsMate = require('ejs-mate');
 const session = require('express-session');
 const flash = require('connect-flash');
