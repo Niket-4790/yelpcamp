@@ -48,9 +48,10 @@ const seedDB=async()=>{
        
     })
       await camp.save();
-    }//here we are basically creating a Campgound collection inside our mongodp database
+    }//here we are creating a Campgound collection inside our mongodp database
 }
 seedDB().then(() => {
-    mongoose.connection.close();
-})
+    mongoose. connection.close();
+})//This line calls the seedDB function to execute the seeding process. Once the seeding is complete,
+//it closes the connection to the database using Mongoose.connection.close().
 
