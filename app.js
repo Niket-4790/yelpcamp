@@ -1,14 +1,15 @@
 if (process.env.NODE_ENV !== "production") {
     require('dotenv').config();
 }
-const express = require('express');
-const path = require('path');
+const express = require('express');//This line imports the express module, which is a popular Node.js framework used for building web applications. The express function creates an instance of an Express application.
+const path = require('path');//The path module is a built-in Node.js module that provides utilities for working with file and directory paths. It is used here to manage and resolve file paths in a cross-platform manner.
 const mongoose = require('mongoose');
 const ejsMate = require('ejs-mate');
 const session = require('express-session');
 const flash = require('connect-flash');
 const ExpressError = require('./utils/ExpressError');
-const methodOverride = require('method-override');
+const methodOverride = require('method-override');//method-override is a middleware that allows you to use HTTP verbs like PUT or DELETE where the client doesn't support it. 
+//For example, HTML forms only support GET and POST, but this middleware allows you to override the method using a query parameter or a hidden input field.
 const passport=require('passport');
 const LocalStrategy=require('passport-local');
 const User=require('./models/user');
